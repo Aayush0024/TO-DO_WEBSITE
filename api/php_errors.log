@@ -1,0 +1,92 @@
+[21-Apr-2025 06:53:21 UTC] PHP Fatal error:  Uncaught Error: mysqli_stmt object is already closed in C:\xampp\htdocs\classwork\todo\api\register.php:73
+Stack trace:
+#0 C:\xampp\htdocs\classwork\todo\api\register.php(73): mysqli_stmt->close()
+#1 {main}
+  thrown in C:\xampp\htdocs\classwork\todo\api\register.php on line 73
+[21-Apr-2025 06:57:17 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in C:\xampp\htdocs\classwork\todo\api\login.php on line 42
+[21-Apr-2025 07:00:00 UTC] Login attempt started
+[21-Apr-2025 07:00:00 UTC] Login attempt for email: test@example.com
+[21-Apr-2025 07:00:00 UTC] Query executed. Found rows: 1
+[21-Apr-2025 07:00:00 UTC] Verifying password for user: Test User
+[21-Apr-2025 07:00:01 UTC] Password verified successfully
+[21-Apr-2025 07:00:01 UTC] Session data set. User ID: 1
+[21-Apr-2025 07:15:31 UTC] PHP Fatal error:  Uncaught Error: mysqli_stmt object is already closed in C:\xampp\htdocs\classwork\todo\api\get_tasks.php:84
+Stack trace:
+#0 C:\xampp\htdocs\classwork\todo\api\get_tasks.php(84): mysqli_stmt_close(Object(mysqli_stmt))
+#1 {main}
+  thrown in C:\xampp\htdocs\classwork\todo\api\get_tasks.php on line 84
+[21-Apr-2025 07:17:29 UTC] PHP Fatal error:  Uncaught Error: mysqli_stmt object is already closed in C:\xampp\htdocs\classwork\todo\api\get_tasks.php:84
+Stack trace:
+#0 C:\xampp\htdocs\classwork\todo\api\get_tasks.php(84): mysqli_stmt_close(Object(mysqli_stmt))
+#1 {main}
+  thrown in C:\xampp\htdocs\classwork\todo\api\get_tasks.php on line 84
+[22-Apr-2025 13:24:27 UTC] Login attempt started
+[22-Apr-2025 13:24:27 UTC] Login attempt for email: testuser123@gmail.com
+[22-Apr-2025 13:24:27 UTC] Query executed. Found rows: 1
+[22-Apr-2025 13:24:27 UTC] Verifying password for user: testuser
+[22-Apr-2025 13:24:27 UTC] Password verified successfully
+[22-Apr-2025 13:24:27 UTC] Session data set. User ID: 2
+[22-Apr-2025 16:17:42 UTC] Login attempt started
+[22-Apr-2025 16:17:42 UTC] Login attempt for email: abc@gmail.com
+[22-Apr-2025 16:17:42 UTC] Query executed. Found rows: 0
+[22-Apr-2025 16:17:42 UTC] Login error: Invalid email or password
+[22-Apr-2025 16:18:19 UTC] Login attempt started
+[22-Apr-2025 16:18:19 UTC] Login attempt for email: abc@gmail.com
+[22-Apr-2025 16:18:19 UTC] Query executed. Found rows: 1
+[22-Apr-2025 16:18:19 UTC] Verifying password for user: ayu
+[22-Apr-2025 16:18:19 UTC] Password verified successfully
+[22-Apr-2025 16:18:19 UTC] Session data set. User ID: 1
+[22-Apr-2025 16:20:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table '`todo_app`.`tasks`' already exists in C:\xampp\htdocs\todo\api\config.php:72
+Stack trace:
+#0 C:\xampp\htdocs\todo\api\config.php(72): mysqli_query(Object(mysqli), 'CREATE TABLE IF...')
+#1 C:\xampp\htdocs\todo\api\register.php(2): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\todo\api\config.php on line 72
+[22-Apr-2025 16:21:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Tablespace for table '`todo_app`.`tasks`' exists. Please DISCARD the tablespace before IMPORT in C:\xampp\htdocs\todo\api\config.php:72
+Stack trace:
+#0 C:\xampp\htdocs\todo\api\config.php(72): mysqli_query(Object(mysqli), 'CREATE TABLE IF...')
+#1 C:\xampp\htdocs\todo\api\register.php(2): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\todo\api\config.php on line 72
+[22-Apr-2025 16:30:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table '`todo_app`.`tasks`' already exists in C:\xampp\htdocs\todo\api\config.php:72
+Stack trace:
+#0 C:\xampp\htdocs\todo\api\config.php(72): mysqli_query(Object(mysqli), 'CREATE TABLE IF...')
+#1 C:\xampp\htdocs\todo\api\login.php(2): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\todo\api\config.php on line 72
+[22-Apr-2025 16:31:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Tablespace for table '`todo_app`.`tasks`' exists. Please DISCARD the tablespace before IMPORT in C:\xampp\htdocs\todo\api\config.php:72
+Stack trace:
+#0 C:\xampp\htdocs\todo\api\config.php(72): mysqli_query(Object(mysqli), 'CREATE TABLE IF...')
+#1 C:\xampp\htdocs\todo\api\register.php(2): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\todo\api\config.php on line 72
+[22-Apr-2025 16:42:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table '`todo_app`.`users`' already exists in C:\xampp\htdocs\todo\api\config.php:55
+Stack trace:
+#0 C:\xampp\htdocs\todo\api\config.php(55): mysqli_query(Object(mysqli), 'CREATE TABLE IF...')
+#1 C:\xampp\htdocs\todo\api\register.php(2): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\todo\api\config.php on line 55
+[22-Apr-2025 16:47:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Tablespace for table '`todo_app`.`users`' exists. Please DISCARD the tablespace before IMPORT in C:\xampp\htdocs\todo\api\config.php:55
+Stack trace:
+#0 C:\xampp\htdocs\todo\api\config.php(55): mysqli_query(Object(mysqli), 'CREATE TABLE IF...')
+#1 C:\xampp\htdocs\todo\api\register.php(2): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\todo\api\config.php on line 55
+[22-Apr-2025 16:48:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Tablespace for table '`todo_app`.`users`' exists. Please DISCARD the tablespace before IMPORT in C:\xampp\htdocs\todo\api\config.php:55
+Stack trace:
+#0 C:\xampp\htdocs\todo\api\config.php(55): mysqli_query(Object(mysqli), 'CREATE TABLE IF...')
+#1 C:\xampp\htdocs\todo\api\register.php(2): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\todo\api\config.php on line 55
+[22-Apr-2025 16:50:20 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Tablespace for table '`todo_app`.`users`' exists. Please DISCARD the tablespace before IMPORT in C:\xampp\htdocs\todo\api\config.php:55
+Stack trace:
+#0 C:\xampp\htdocs\todo\api\config.php(55): mysqli_query(Object(mysqli), 'CREATE TABLE IF...')
+#1 C:\xampp\htdocs\todo\api\register.php(6): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\todo\api\config.php on line 55
+[22-Apr-2025 17:16:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table '`todo_app`.`users`' already exists in C:\xampp\htdocs\todo\api\config.php:55
+Stack trace:
+#0 C:\xampp\htdocs\todo\api\config.php(55): mysqli_query(Object(mysqli), 'CREATE TABLE IF...')
+#1 C:\xampp\htdocs\todo\api\register.php(6): require_once('C:\\xampp\\htdocs...')
+#2 {main}
+  thrown in C:\xampp\htdocs\todo\api\config.php on line 55
